@@ -4,9 +4,9 @@
   "display": "standalone",
   "name": "جدول العادات",
   "orientation": "any",
-  "scope": "/",
+ "scope": "/habit-tracker/",
   "short_name": "جدول العادات",
-  "start_url": "/",
+"start_url": "/habit-tracker/",
   "theme_color": "#274038",
   "icons": [
     { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" },
