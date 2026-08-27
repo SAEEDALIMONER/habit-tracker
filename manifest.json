@@ -9,16 +9,7 @@
   "start_url": "/",
   "theme_color": "#274038",
   "icons": [
-    {
-      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFa0lEQVR4nO3dwXEUMRRFUZnyhgCIgRS8dBQQCHEQCETiXAiALQtRri7br0fdUuu/r7ln7WLU6ju/NdhlP3x9firARz5FLwC+iAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAPSY/QCwrz8/tX+xU/fvl+3ElsP9/M7wQ7VsO9OWlk8joFBKAuHsmYcE5p4b71KVosjJIutlRJZJ47wLLbWSGSFOKyy2MqeSO44bLPYyptI1jiGZNF422a+lpWUcZy+W0PuUOyrz5QsjhM35tJb4raesTLFcfROTLsNtgvrlCaO9hsQuPUpFtkuQRzpdjzdghX3OBo32nCX8678lfXPc6Te35mfky/iOzlads0zizfyXojp5Mi7oe+1rNNzfjhOjmll/Pzyt+XLfvz53P9aGXO3i+PmJnbuYGMQSmcoV1/dWMl+hvT03nU28f7fOVfJ07fvnk+QD3lNjv2NO1fGqCw+dC6RKy7zCkZxDN+yS7PYOpFIij5c4hi7WdOy2DqaiH8fph9lt1KUceJ1HW7/Pos4Rp3Rfn75G1XG8AU4nFvj4xg1XWOz2Gpfyf7VhfcRH8eOjGVUo/qIFRzHzpsjbxnVkD5ih4f15GjhWUblvLYWkXH0jw3/3W9coefwcJwcy5RR9fcRJSyOzjdEljKqztVGDQ+7ydHyBspVRtWyZrfhERNH+Cf4dEJ2zGtyrDo2qnTDIyCOnjdB3jKqnvXPHx5ekwNWjOK4OVGzj43q5lX4PFlmx8FRtMfk3XOZHHcyNqosw8MlDhjKEcdKY6NKcUVT4+DA0W/mHlpMDpNHrBWHPbGIY1+KCXyC/3UliANRiAPSvDg4jY4ybSfjJ8f+ycv/wdxj/+rCz6TxccAWcUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEASk+jv3vMQ75veO29q8u/PvY8+II/x7jMqbtZPzkgC3igJQgjlWPHf7XZRFH+MnLkMOeTI2DM2m/mXtoMTlu8p/AR6W4ohxxIIRLHDcfsSneao1uXovDgaPMj4NjR4/Ju+cyOcrdDI8sY6NYxQE3AXH0zMbsw6Nn/fOfyF6To2Wi5u2jZeU+z5QSFQfH0qNCdsxrcpR1h0e6sVEC4+h8K+Tqo3O1UYPWbnKU5jdQlj4a1+k2NkpsHP1/u8q/j/4yAs9njpPjEOc+nNfWIjiOIX/4zvMetK/Kc2yU8Dj25e1jSBnh4uMY9Se7ffoYVUb4/wbFx1HG7cKPP59jExm4gPAyikkc+44O3qg+jr6u8wOlevj6/BS9hv+Gz9hpv6byRI7mD5TKKI5yzZZdmsi5KZWijOIWR7ls44YncvrhlaWMUspj9AKOefn969z2vd7Lzko6DzT+54wtu8lR2nZwyDusMZQhJ9xpFzWQYxwl51buSHo5ph9lW3Yqy4hOWkaxnRxV4+333NmSf/2mk6Nq3DXPEZK9jGI+Oar2e2+y0ekWrCSIo0qx4ykW2S5NHOX442PaDbBdWKdMcZRTx4tL74TbesZKFkd1+gQ65MbEvvpMKeMogz6hzPw0lK6MkjeOyvND7BsZs6hyx1HZJpI3i2qFOCqrRLJnUa0TRxWeyBpZVKvFUYUkslIW1ZpxvJpQyXpNvFo8jq2BoSwcxNYdxfHGoVbupIY37jcO3GT98xyIRRyQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKA9A9ChBZ5b9f7egAAAABJRU5ErkJggg==",
-      "isSquare": false,
-      "isPng": false,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 0,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": false
-    }
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
