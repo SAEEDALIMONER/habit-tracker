@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>جدول العادات</title>
+
+<!-- إعدادات تشغيله كتطبيق لما تضيفه للشاشة الرئيسية -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="جدول العادات">
+<meta name="theme-color" content="#274038">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFa0lEQVR4nO3dwXEUMRRFUZnyhgCIgRS8dBQQCHEQCETiXAiALQtRri7br0fdUuu/r7ln7WLU6ju/NdhlP3x9firARz5FLwC+iAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAPSY/QCwrz8/tX+xU/fvl+3ElsP9/M7wQ7VsO9OWlk8joFBKAuHsmYcE5p4b71KVosjJIutlRJZJ47wLLbWSGSFOKyy2MqeSO44bLPYyptI1jiGZNF422a+lpWUcZy+W0PuUOyrz5QsjhM35tJb4raesTLFcfROTLsNtgvrlCaO9hsQuPUpFtkuQRzpdjzdghX3OBo32nCX8678lfXPc6Te35mfky/iOzlads0zizfyXojp5Mi7oe+1rNNzfjhOjmll/Pzyt+XLfvz53P9aGXO3i+PmJnbuYGMQSmcoV1/dWMl+hvT03nU28f7fOVfJ07fvnk+QD3lNjv2NO1fGqCw+dC6RKy7zCkZxDN+yS7PYOpFIij5c4hi7WdOy2DqaiH8fph9lt1KUceJ1HW7/Pos4Rp3Rfn75G1XG8AU4nFvj4xg1XWOz2Gpfyf7VhfcRH8eOjGVUo/qIFRzHzpsjbxnVkD5ih4f15GjhWUblvLYWkXH0jw3/3W9coefwcJwcy5RR9fcRJSyOzjdEljKqztVGDQ+7ydHyBspVRtWyZrfhERNH+Cf4dEJ2zGtyrDo2qnTDIyCOnjdB3jKqnvXPHx5ekwNWjOK4OVGzj43q5lX4PFlmx8FRtMfk3XOZHHcyNqosw8MlDhjKEcdKY6NKcUVT4+DA0W/mHlpMDpNHrBWHPbGIY1+KCXyC/3UliANRiAPSvDg4jY4ybSfjJ8f+ycv/wdxj/+rCz6TxccAWcUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEASk+jv3vMQ75veO29q8u/PvY8+II/x7jMqbtZPzkgC3igJQgjlWPHf7XZRFH+MnLkMOeTI2DM2m/mXtoMTlu8p/AR6W4ohxxIIRLHDcfsSneao1uXovDgaPMj4NjR4/Ju+cyOcrdDI8sY6NYxQE3AXH0zMbsw6Nn/fOfyF6To2Wi5u2jZeU+z5QSFQfH0qNCdsxrcpR1h0e6sVEC4+h8K+Tqo3O1UYPWbnKU5jdQlj4a1+k2NkpsHP1/u8q/j/4yAs9njpPjEOc+nNfWIjiOIX/4zvMetK/Kc2yU8Dj25e1jSBnh4uMY9Se7ffoYVUb4/wbFx1HG7cKPP59jExm4gPAyikkc+44O3qg+jr6u8wOlevj6/BS9hv+Gz9hpv6byRI7mD5TKKI5yzZZdmsi5KZWijOIWR7ls44YncvrhlaWMUspj9AKOefn969z2vd7Lzko6DzT+54wtu8lR2nZwyDusMZQhJ9xpFzWQYxwl51buSHo5ph9lW3Yqy4hOWkaxnRxV4+333NmSf/2mk6Nq3DXPEZK9jGI+Oar2e2+y0ekWrCSIo0qx4ykW2S5NHOX442PaDbBdWKdMcZRTx4tL74TbesZKFkd1+gQ65MbEvvpMKeMogz6hzPw0lK6MkjeOyvND7BsZs6hyx1HZJpI3i2qFOCqrRLJnUa0TRxWeyBpZVKvFUYUkslIW1ZpxvJpQyXpNvFo8jq2BoSwcxNYdxfHGoVbupIY37jcO3GT98xyIRRyQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKA9A9ChBZ5b9f7egAAAABJRU5ErkJggg==">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+
+:root{
+  --paper:#EFEAE1;
+  --paper-line:#D9D1BF;
+  --ink:#233029;
+  --ink-soft:#5B6960;
+  --moss:#3E6259;
+  --moss-deep:#274038;
+  --clay:#B4552F;
+  --gold:#BE9A4A;
+  --danger:#A44A3F;
+  --card:#F7F4EC;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:'Tajawal', sans-serif;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 34px, var(--paper-line) 34px 35px),
+    repeating-linear-gradient(90deg, transparent 0 34px, var(--paper-line) 34px 35px),
+    var(--paper);
+  color:var(--ink);
+  min-height:100vh;
+  padding:calc(16px + env(safe-area-inset-top)) 12px calc(40px + env(safe-area-inset-bottom));
+}
+
+.wrap{max-width:480px;margin:0 auto;}
+
+.head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:16px;
+  padding-bottom:12px;
+  border-bottom:3px solid var(--moss-deep);
+}
+.head h1{
+  font-size:22px;
+  font-weight:900;
+  margin:0;
+  color:var(--moss-deep);
+  letter-spacing:-0.3px;
+}
+.head .sub{
+  font-size:11px;
+  color:var(--ink-soft);
+  margin-top:2px;
+}
+.date-badge{
+  background:var(--moss-deep);
+  color:var(--paper);
+  padding:6px 10px;
+  border-radius:3px;
+  font-size:11px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.install-tip{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:var(--card);
+  border:1.5px dashed var(--moss);
+  border-radius:4px;
+  padding:9px 12px;
+  font-size:11.5px;
+  color:var(--moss-deep);
+  margin-bottom:14px;
+  line-height:1.7;
+}
+.install-tip button{
+  margin-inline-start:auto;
+  background:none;
+  border:none;
+  color:var(--ink-soft);
+  font-size:14px;
+  cursor:pointer;
+  flex-shrink:0;
+}
+
+.addbar{
+  display:flex;
+  gap:6px;
+  margin-bottom:14px;
+}
+.addbar input{
+  flex:1;
+  min-width:0;
+  padding:10px 12px;
+  border:2px solid var(--ink);
+  border-radius:3px;
+  font-family:inherit;
+  font-size:14px;
+  background:var(--card);
+  color:var(--ink);
+}
+.addbar input:focus{outline:none;border-color:var(--moss);}
+.addbar button{
+  padding:0 16px;
+  border:none;
+  border-radius:3px;
+  background:var(--moss-deep);
+  color:var(--paper);
+  font-family:inherit;
+  font-weight:700;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.range-nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+.range-nav button{
+  background:none;
+  border:2px solid var(--ink);
+  color:var(--ink);
+  width:30px;height:30px;
+  border-radius:50%;
+  font-size:15px;
+  cursor:pointer;
+  font-family:inherit;
+  flex-shrink:0;
+}
+.range-label{font-weight:700;color:var(--moss-deep);font-size:12.5px;}
+
+.table-scroll{
+  overflow-x:auto;
+  border:2px solid var(--ink);
+  border-radius:4px;
+  background:var(--card);
+  -webkit-overflow-scrolling:touch;
+}
+.grid-row{
+  display:grid;
+  grid-template-columns: 92px repeat(var(--n,1), 42px);
+  border-bottom:1px solid var(--paper-line);
+}
+.grid-row:last-child{border-bottom:none;}
+.grid-row.headrow{
+  background:var(--moss-deep);
+}
+.namecell{
+  position:sticky;
+  right:0;
+  z-index:3;
+  background:var(--card);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:4px;
+  padding:8px 10px;
+  font-size:12.5px;
+  font-weight:700;
+  color:var(--moss-deep);
+  border-left:2px solid var(--ink);
+}
+.grid-row.headrow .namecell{
+  background:var(--moss-deep);
+  color:var(--paper);
+  font-size:11px;
+}
+.del-x{
+  background:none;
+  border:none;
+  color:var(--danger);
+  font-size:13px;
+  opacity:0.6;
+  cursor:pointer;
+  flex-shrink:0;
+}
+.daycell{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:1px;
+  padding:6px 0;
+  color:var(--paper);
+  border-right:1px solid rgba(255,255,255,0.15);
+}
+.daycell .dname{font-size:9px;opacity:0.8;font-weight:500;}
+.daycell .dnum{font-size:11px;font-weight:900;}
+.daycell.today .dnum{color:var(--gold);}
+
+.bubblecell{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-right:1px solid var(--paper-line);
+  padding:6px 0;
+}
+.bubble{
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  border:2px solid var(--ink-soft);
+  background:transparent;
+  cursor:pointer;
+  padding:0;
+  transition:all .1s;
+}
+.bubble.filled{
+  background:var(--ink);
+  border-color:var(--ink);
+}
+.bubble.locked{
+  cursor:not-allowed;
+  border-color:var(--paper-line);
+  opacity:0.55;
+}
+.bubble.locked.filled{
+  background:var(--ink-soft);
+  border-color:var(--ink-soft);
+}
+.daycell.locked{opacity:0.6;}
+.daycell .lock-ic{font-size:8px;margin-top:1px;opacity:0.75;}
+
+.empty{
+  padding:34px 16px;
+  text-align:center;
+  color:var(--ink-soft);
+  font-size:13px;
+  line-height:1.9;
+}
+.empty b{color:var(--moss-deep);}
+
+.chart-card{
+  margin-top:18px;
+  background:var(--card);
+  border:2px solid var(--ink);
+  border-radius:4px;
+  padding:12px 8px 6px;
+}
+.chart-title{
+  font-size:12.5px;
+  font-weight:700;
+  color:var(--moss-deep);
+  padding:0 6px 8px;
+}
+.chart-scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.footer-note{
+  text-align:center;
+  color:var(--ink-soft);
+  font-size:10.5px;
+  margin-top:14px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div>
+      <h1>جدول العادات</h1>
+      <div class="sub">لوّن الفقاعة لما تخلّص العادة — اليوم اللي فات بيتقفل تلقائي</div>
+    </div>
+    <div class="date-badge" id="todayBadge"></div>
+  </div>
+
+  <div class="install-tip" id="installTip">
+    📲 عشان يبقى تطبيق على شاشتك الرئيسية: افتح الملف من Safari أو Chrome، ودوس على مشاركة ← "إضافة إلى الشاشة الرئيسية"
+    <button onclick="document.getElementById('installTip').style.display='none'">✕</button>
+  </div>
+
+  <div class="addbar">
+    <input type="text" id="newHabit" placeholder="عادة جديدة" maxlength="16">
+    <button onclick="addHabit()">إضافة</button>
+  </div>
+
+  <div class="range-nav">
+    <button onclick="changeRange(-1)">‹</button>
+    <div class="range-label" id="rangeLabel"></div>
+    <button onclick="changeRange(1)">›</button>
+  </div>
+
+  <div class="table-scroll">
+    <div id="grid"></div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">📈 عدد العادات المُنجزة يوميًا</div>
+    <div class="chart-scroll">
+      <svg id="chartSvg"></svg>
+    </div>
+  </div>
+
+  <div class="footer-note">بياناتك محفوظة على جهازك بس — من غير إنترنت</div>
+</div>
+
+<script>
+const DAY_SHORT = ['ح','ن','ث','ر','خ','ج','س'];
+const STORAGE_KEY = 'habit_notebook_standalone_v1';
+let habits = [];   // [{id, name}]
+let logs = {};     // {dateKey: {habitId:true}}
+let rangeOffset = 0;
+const WINDOW_SIZE = 10;
+const COL_W = 42;
+
+function fmtDateKey(d){
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+}
+function dayNum(d){ return d.getDate(); }
+
+function getWindowDates(offset){
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const endOffsetDays = -offset*WINDOW_SIZE;
+  const dates = [];
+  for(let i=WINDOW_SIZE-1;i>=0;i--){
+    const d = new Date(today);
+    d.setDate(today.getDate() + endOffsetDays - i);
+    dates.push(d);
+  }
+  return dates;
+}
+
+function loadAll(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const data = JSON.parse(raw);
+      habits = data.habits || [];
+      logs = data.logs || {};
+    }
+  }catch(e){ /* first run or storage unavailable */ }
+  render();
+}
+
+function saveAll(){
+  try{
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({habits, logs}));
+  }catch(e){ console.error('فشل الحفظ', e); }
+}
+
+function addHabit(){
+  const input = document.getElementById('newHabit');
+  const name = input.value.trim();
+  if(!name) return;
+  habits.push({id: Date.now().toString(), name});
+  input.value='';
+  saveAll();
+  render();
+}
+
+function deleteHabit(id){
+  habits = habits.filter(h=>h.id!==id);
+  saveAll();
+  render();
+}
+
+function toggleX(dateKey, habitId){
+  const todayKey = fmtDateKey(new Date(new Date().setHours(0,0,0,0)));
+  if(dateKey < todayKey) return; // اليوم ده مقفول، خلص وقته
+  logs[dateKey] = logs[dateKey] || {};
+  if(logs[dateKey][habitId]) delete logs[dateKey][habitId];
+  else logs[dateKey][habitId] = true;
+  saveAll();
+  render();
+}
+
+function changeRange(delta){
+  rangeOffset += delta;
+  if(rangeOffset < 0) rangeOffset = 0;
+  render();
+}
+
+function completedCount(dateKey){
+  if(!logs[dateKey]) return 0;
+  return Object.keys(logs[dateKey]).filter(id => logs[dateKey][id] && habits.some(h=>h.id===id)).length;
+}
+
+function render(){
+  const now = new Date();
+  const monthsAr = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  document.getElementById('todayBadge').textContent = `${now.getDate()} ${monthsAr[now.getMonth()]}`;
+
+  const dates = getWindowDates(rangeOffset);
+  document.getElementById('rangeLabel').textContent =
+    rangeOffset===0 ? `آخر ${WINDOW_SIZE} أيام` : `${dates[0].getDate()}/${dates[0].getMonth()+1} — ${dates[dates.length-1].getDate()}/${dates[dates.length-1].getMonth()+1}`;
+
+  const grid = document.getElementById('grid');
+  const todayKey = fmtDateKey(new Date(new Date().setHours(0,0,0,0)));
+
+  if(habits.length===0){
+    grid.innerHTML = `<div class="empty">لسه معملتش أي عادة 🌱<br><b>ضيف عادة من فوق</b> وابدأ تلوّن الفقاعات كل يوم</div>`;
+    renderChart(dates, todayKey);
+    return;
+  }
+
+  const n = dates.length;
+  let html = `<div class="grid-row headrow" style="--n:${n}">
+    <div class="namecell">العادة</div>
+    ${dates.map(d=>{
+      const key = fmtDateKey(d);
+      const isToday = key===todayKey;
+      const isLocked = key < todayKey;
+      return `<div class="daycell ${isToday?'today':''} ${isLocked?'locked':''}"><span class="dname">${DAY_SHORT[d.getDay()]}</span><span class="dnum">${dayNum(d)}</span>${isLocked?'<span class="lock-ic">🔒</span>':''}</div>`;
+    }).join('')}
+  </div>`;
+
+  habits.forEach(h=>{
+    html += `<div class="grid-row" style="--n:${n}">
+      <div class="namecell">
+        <span>${h.name}</span>
+        <button class="del-x" onclick="deleteHabit('${h.id}')">✕</button>
+      </div>
+      ${dates.map(d=>{
+        const key = fmtDateKey(d);
+        const done = logs[key] && logs[key][h.id];
+        const isLocked = key < todayKey;
+        return `<div class="bubblecell"><button class="bubble ${done?'filled':''} ${isLocked?'locked':''}" ${isLocked?'disabled':`onclick="toggleX('${key}','${h.id}')"`}></button></div>`;
+      }).join('')}
+    </div>`;
+  });
+
+  grid.innerHTML = html;
+  renderChart(dates, todayKey);
+}
+
+function renderChart(dates, todayKey){
+  const svg = document.getElementById('chartSvg');
+  const nameColW = 92;
+  const total = habits.length;
+
+  if(total===0){
+    svg.setAttribute('viewBox','0 0 300 130');
+    svg.style.width='100%';
+    svg.style.height='140px';
+    svg.innerHTML = `<text x="150" y="65" text-anchor="middle" font-size="11" fill="#5B6960" font-family="Tajawal">ضيف عادات الأول عشان يظهر الرسم</text>`;
+    return;
+  }
+
+  const H = 150, padT = 14, padB = 26;
+  const plotH = H - padT - padB;
+  const W = nameColW + dates.length*COL_W + 10;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.style.width = W+'px';
+  svg.style.height = H+'px';
+  svg.style.display='block';
+
+  const xForIdx = i => nameColW + i*COL_W + COL_W/2;
+  const yForVal = v => padT + plotH - (v/total)*plotH;
+
+  const points = dates.map((d,i)=>({key: fmtDateKey(d), count: completedCount(fmtDateKey(d)), idx:i, d}));
+
+  let path = '';
+  points.forEach((p,i)=>{
+    const x = xForIdx(i), y = yForVal(p.count);
+    path += (i===0?'M':'L') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+  });
+
+  let dots='', labels='', gridlines='';
+  gridlines += `<line x1="${nameColW}" y1="${padT+plotH}" x2="${W-6}" y2="${padT+plotH}" stroke="#D9D1BF" stroke-width="1"/>`;
+
+  points.forEach((p,i)=>{
+    const x = xForIdx(i), y = yForVal(p.count);
+    const isToday = p.key===todayKey;
+    dots += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="${isToday?'#BE9A4A':'#B4552F'}" />`;
+    labels += `<text x="${x.toFixed(1)}" y="${H-8}" font-size="8" fill="#5B6960" text-anchor="middle" font-family="Tajawal">${p.d.getDate()}</text>`;
+  });
+
+  svg.innerHTML = `
+    <text x="${nameColW-6}" y="${padT+4}" font-size="8" fill="#5B6960" text-anchor="end" font-family="Tajawal">${total}</text>
+    <text x="${nameColW-6}" y="${padT+plotH+3}" font-size="8" fill="#5B6960" text-anchor="end" font-family="Tajawal">0</text>
+    ${gridlines}
+    <path d="${path}" fill="none" stroke="#B4552F" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+    ${dots}
+    ${labels}
+  `;
+}
+
+document.getElementById('newHabit').addEventListener('keypress', e=>{
+  if(e.key==='Enter') addHabit();
+});
+
+loadAll();
+</script>
+</body>
+</html>
